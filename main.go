@@ -3,7 +3,7 @@ package main
 func main() {
 	if config_debug {
 		printlnYellow("Debug Mode")
-		test()
+		test()a
 	}
 
 	printlnPink("Release")
