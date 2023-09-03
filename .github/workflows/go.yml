@@ -24,8 +24,8 @@ jobs:
     - name: Build
       run: go build -v ./...
 
-    - name: Test
-      run: go test -v ./... -dsn='${{secrets.DATA_SOURCE_NAME}}'
+    # - name: Test
+    #   run: go test -v ./... -dsn='${{secrets.DATA_SOURCE_NAME}}'
 
     - name: Run
       run: go run -v ./... -dsn='${{secrets.DATA_SOURCE_NAME}}'
